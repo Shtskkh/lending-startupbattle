@@ -22,11 +22,12 @@ html, body {
     background: #FDFDFD;
     font-family: 'Manrope', sans-serif;
     color: #242324;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 .link {
     text-decoration: none;
-    color: #242324;
 }
 
 .container {
@@ -58,6 +59,10 @@ html, body {
     font-weight: 400;
 }
 
+.header__link {
+    color: #242324;
+}
+
 .header__button {
     font-family: 'Craftwork Grotesk', sans-serif;
     font-size: 1rem;
@@ -66,10 +71,6 @@ html, body {
     border-radius: 12px;
     background: #242324;
     color: #FFF;
-}
-
-.header__button:hover {
-    cursor: pointer;
 }
 
 .main {
