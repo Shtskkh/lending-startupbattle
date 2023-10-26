@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+@font-face {
+    font-family: 'Craftwork Grotesk';
+    font-weight: 400;
+    src: url("../assets/font/CraftworkGrotesk-Regular.ttf");
+}
+@font-face {
+    font-family: 'Craftwork Grotesk';
+    font-weight: 500;
+    src: url("../assets/font/CraftworkGrotesk-Medium.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    background: #FDFDFD;
+    font-family: 'Manrope', sans-serif;
+    color: #242324;
+}
+
+.link {
+    text-decoration: none;
+    color: #242324;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px clamp(15px, 4vw, 57px);
+    margin: 30px 0 40px 0;
+    border-radius: 19px;
+    border: 1px solid #D1D1D1;
+}
+
+.header__title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header__nav {
+    display: flex;
+    gap: clamp(5px, 3vw, 43px);
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.header__button {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 14px 22px;
+    border-radius: 12px;
+    background: #242324;
+    color: #FFF;
+}
+
+.header__button:hover {
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    border-radius: 48px;
+    border: 1px solid #D1D1D1;
+    margin-bottom: 120px;
+}
+
+.main__text {
+    margin-top: 90px;
+    margin-left: clamp(5px, 9vw, 99px);
+}
+
+.main__title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 2.75rem;
+    font-weight: 500;
+    line-height: 130%; /* 57.2px */
+    margin-bottom: 36px;
+}
+
+.main__title span {
+    color: #6608FF;
+}
+
+.main__subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    margin-bottom: 49px;
+    padding-right: clamp(50px, 12vw, 150px);
+}
+
+.main__button {
+    width: 232px;
+    height: 64px;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+
+    padding: 10px 29px;
+    margin-bottom: 90px;
+    border: none;
+    border-radius: 12px;
+    background: #6608FF;
+}
+
+.main__button {
+    cursor: pointer;
+}
+
+.main__graphics img {
+    margin: 41px 38px 37px 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.info {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 120px;
+}
+
+.info__logo {
+    width: 260px;
+    height: 260px;
+    border-radius: 48px;
+    background: #6608FF;
+    padding: 102px 45px;
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.info__text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    font-size: 24px;
+    padding: 92px clamp(50px, 6vw, 93px);
+    border-radius: 48px;
+    border: 1px solid #D1D1D1;
+    background: #FDFDFD;
+}
+
+.troubles {
+    display: flex;
+    gap: 41px;
+    margin-bottom: 120px;
+}
+
+.troubles__title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 2.75rem;
+    font-weight: 500;
+    line-height: 130%; /* 57.2px */
+    padding: 45px clamp(50px, 5vw,83px);
+    border-radius: 48px;
+    border: 1px solid #D1D1D1;
+    max-width: 560px;
+    height: 260px;
+}
+
+.troubles__trouble {
+    border-radius: 56px;
+    border: 1px solid #D1D1D1;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 25px clamp(100px, 10vw,114px);
+    margin-bottom: 26px;
+}
+
+.for-who {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 120px;
+}
+
+.for-who__title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 130%; /* 57.2px */
+    background: #6608FF;
+    color: #FFF;
+    padding: 73px 19px;
+    border-radius: 48px;
+    max-height: 260px;
+    max-width: 260px;
+}
+
+.for-who__grid {
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 26px 26px;
+}
+
+.for-who__box {
+    border-radius: 56px;
+    border: 1px solid #D1D1D1;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.box1 {
+    padding-left: 78px;
+    padding-right: 78px;
+    grid-column: 1 / 4;
+
+}
+.box2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-column: 1 / 3;
+}
+
+.box3{
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.box4 {
+    padding-left: 85px;
+    padding-right: 85px;
+    grid-column: 2/4;
+}
+
+.can-do {
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 40px;
+}
+
+.can-do__title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 130%; /* 57.2px */
+    background: #6608FF;
+    color: #FFF;
+    padding: 73px 103px;
+    border-radius: 48px;
+}
+
+.can-do__opportunity {
+    padding: 40px 0 40px 49px;
+    border-radius: 48px;
+    border: 1px solid #D1D1D1;
+}
+
+.can-do__opportunity {
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+}
+
+.pluses {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 120px;
+}
+
+.pluses__plus {
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    width: 260px;
+    height: 260px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 48px;
+    border: 1px solid #D1D1D1;
+}
+
+.pluses__title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 130%; /* 57.2px */
+    color: #FFF;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 48px;
+    background: #6608FF;
+}
+
+.command {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 40px;
+    margin-bottom: 120px;
+}
+
+.command_person img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.command_title {
+    color: #FFF;
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 130%; /* 57.2px */
+    background: linear-gradient(0deg, #6608FF 0%, #6608FF 100%), #FDFDFD;
+    width: 260px;
+    height: 260px;
+    border-radius: 48px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.test {
+    height: 267px;
+    border-radius: 48px;
+    background: #242324;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 81px;
+    gap: 40px;
+    margin-bottom: 63px;
+}
+
+.test__title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 130%; /* 44.2px */
+}
+
+.test__text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+}
+
+.test__button {
+    width: 232px;
+    height: 64px;
+    padding: 10px 29px;
+    background: #FFF;
+    border-radius: 12px;
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+}
+
+.footer__title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footer {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
